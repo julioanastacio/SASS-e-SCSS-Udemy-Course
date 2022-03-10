@@ -1,0 +1,61 @@
+@import "variables"
+@import "button"
+@import "mixins"
+@import "plugins"
+@import "functions"
+
+body
+  margin: 20px
+
+.p-esp
+  @include special
+
+h2
+  @include special
+  @include green  
+
+.esp-menor
+  @include espacamento(10px, 10px)
+  @include customBorder(solid, red)
+  @include colors
+  @extend %font-pattern
+
+.esp-medio
+  @include espacamento(15px, 15px)
+  @include customBorder(dotted, blue, 4px)
+  @include colors($background: #321)
+  @extend %font-pattern
+
+  
+.esp-maior
+  @include espacamento(25px, 25px)
+  @include customBorder(solid, green)
+  @include colors($background: #336699, $font: #991155)
+  @extend %font-pattern
+
+
+.esp-maior-ainda
+  $padding: 50px
+  $margin: 50px
+  @include espacamento($padding, $margin)
+  @include customBorder(double, gold, 3px)
+  @include colors($font: gold)
+  @extend %font-pattern
+
+$medida: 4
+
+.container-menor
+  width: 100px * ($medida + 2)
+  @include customBorder(solid, green)
+
+.container-maior
+  width: 25rem * $medida
+  @include customBorder(solid, red)
+
+.fonte-pequena
+  font-size: 5px
+  color: text-color(5)
+
+.fonte-grande
+  font-size: 25px
+  color: text-color(25)

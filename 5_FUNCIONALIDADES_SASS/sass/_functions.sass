@@ -1,0 +1,18 @@
+@function text-color($size)
+
+  $color: #000
+
+  @if $size > 10
+    $color: red
+  @else
+    $color: blue
+
+  @return $color
+  
+@function custom-border($variation: 1)
+
+  $border: none
+
+  @if $variation == 1
+    $border: 1px solid red
+     
