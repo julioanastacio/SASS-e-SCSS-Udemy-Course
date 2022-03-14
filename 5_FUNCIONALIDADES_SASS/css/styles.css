@@ -74,22 +74,69 @@ h2:hover {
 
 .container-menor {
   width: 600px;
-  border: 1px solid green;
+  border: 1px solid red;
 }
 
 .container-maior {
   width: 100rem;
-  border: 1px solid red;
+  border: 2px solid green;
 }
 
 .fonte-pequena {
-  font-size: 5px;
-  color: blue;
+  font-size: 15px;
+  border: 3px dotted gold;
 }
 
 .fonte-grande {
   font-size: 25px;
   color: red;
+  border: 3px dotted gold;
+}
+
+.teste-01 {
+  width: 100px;
+  background-color: red;
+}
+
+.teste-02 {
+  width: 500px;
+  background-color: green;
+}
+
+.teste-03 {
+  width: 40px;
+  padding: 20px;
+  background-color: blue;
+}
+
+.title-40px {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.title-60px {
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.title-100px {
+  font-size: 100px;
+  line-height: 120px;
+}
+
+.p-1 {
+  color: lightblue;
+  background-color: #000;
+}
+
+.p-2 {
+  color: lightgreen;
+  background-color: #000;
+}
+
+.p-3 {
+  color: lightcoral;
+  background-color: #000;
 }
 
 /*# sourceMappingURL=styles.css.map */
